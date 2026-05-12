@@ -25,6 +25,19 @@ const Checkout = ({ data }) => {
       return;
     }
 
+    if (id === '4year') {
+      setResource({
+        id: '4year',
+        title: 'Full 4-Year Access',
+        course_code: 'ALL SEMESTERS',
+        type: 'Full Access',
+        author: 'CUMate',
+        price: 2199,
+        pdf_link: '/'
+      });
+      return;
+    }
+
     if (data && data.resources) {
       const found = data.resources.find(r => String(r.id) === id);
       if (found) {
@@ -129,12 +142,12 @@ const Checkout = ({ data }) => {
                 </div>
                 <h3 className="text-2xl font-extrabold text-slate-900 mb-2">Payment Successful!</h3>
                 <p className="text-slate-500 font-medium mb-8">
-                  {id === 'pro' 
-                    ? "Welcome to CUMate Pro! Your account has been upgraded successfully. You now have unlimited access."
+                  {id === 'pro' || id === '4year'
+                    ? `Welcome to CUMate ${id === '4year' ? 'Full 4-Year Access' : 'Pro'}! Your account has been upgraded successfully. You now have unlimited access.`
                     : "Your transaction was completed successfully. You now have access to this premium resource."
                   }
                 </p>
-                {id === 'pro' ? (
+                {id === 'pro' || id === '4year' ? (
                   <Link 
                     to="/" 
                     className="w-full inline-flex items-center justify-center px-6 py-4 bg-[#D4AF37] text-slate-900 text-lg font-bold rounded-xl shadow-md hover:bg-yellow-400 transition-colors"

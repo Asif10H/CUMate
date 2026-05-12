@@ -80,29 +80,33 @@ const Pricing = () => {
                 </div>
 
                 <div className="bg-slate-50 rounded-3xl shadow-sm border border-slate-200 p-8 flex flex-col hover:shadow-lg transition-all duration-300 h-full">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Pay-as-you-go</h3>
-                    <p className="text-slate-500 mb-6 text-sm flex-grow">Buy exactly what you need.</p>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Full 4-Year Access</h3>
+                    <p className="text-slate-500 mb-6 text-sm flex-grow">Complete coverage for your entire university journey.</p>
                     <div className="mb-6 pb-6 border-b border-slate-200">
-                        <span className="text-5xl font-extrabold text-slate-900">৳20<span className="text-2xl text-slate-500 font-medium">-50</span></span>
-                        <span className="text-slate-500 font-medium">/item</span>
+                        <span className="text-5xl font-extrabold text-slate-900">৳2199</span>
+                        <span className="text-slate-500 font-medium">/4 Years</span>
                     </div>
                     <ul className="space-y-4 mb-8 flex-grow text-sm font-medium">
                         <li className="flex items-start">
                             <i className="fa-solid fa-check-circle text-green-500 mt-0.5 mr-3 text-lg"></i>
-                            <span className="text-slate-700">Lifetime access to purchased items</span>
+                            <span className="text-slate-700">Access all 8 semesters of resources</span>
+                        </li>
+                        <li className="flex items-start">
+                            <i className="fa-solid fa-check-circle text-green-500 mt-0.5 mr-3 text-lg"></i>
+                            <span className="text-slate-700">One-time payment, no renewals</span>
                         </li>
                         <li className="flex items-start">
                             <i className="fa-solid fa-check-circle text-green-500 mt-0.5 mr-3 text-lg"></i>
                             <span className="text-slate-700">Instant download via bKash</span>
                         </li>
-                        <li className="flex items-start opacity-50">
-                            <i className="fa-solid fa-xmark-circle text-slate-400 mt-0.5 mr-3 text-lg"></i>
-                            <span className="text-slate-500">No recurring fees</span>
+                        <li className="flex items-start">
+                            <i className="fa-solid fa-check-circle text-green-500 mt-0.5 mr-3 text-lg"></i>
+                            <span className="text-slate-700">Lifetime access to all materials</span>
                         </li>
                     </ul>
-                    <button className="w-full bg-white hover:bg-[#064E3B] hover:text-white text-[#064E3B] border-2 border-[#064E3B] font-bold py-3 px-4 rounded-xl transition-all duration-300 cursor-pointer">
-                        Browse Premium
-                    </button>
+                    <Link to="/checkout/4year" className="w-full text-center bg-white hover:bg-[#064E3B] hover:text-white text-[#064E3B] border-2 border-[#064E3B] font-bold py-3 px-4 rounded-xl transition-all duration-300 cursor-pointer block">
+                        Get Full Access
+                    </Link>
                 </div>
             </div>
         </div>
